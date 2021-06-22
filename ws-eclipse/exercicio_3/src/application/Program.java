@@ -41,17 +41,17 @@ public class Program {
 		System.out.println(acc);
 		
 		System.out.print("\nEnter a deposit value: ");
-		double deposit = sc.nextDouble();
+		double amount = sc.nextDouble();
 		
-		acc.deposit(deposit);
+		acc.deposit(amount);
 		
 		System.out.println("Updated account data:");
 		System.out.println(acc);
 		
 		System.out.print("\nEnter a withdraw value: ");
-		double withdraw = sc.nextDouble();
+		amount = sc.nextDouble();
 		
-		acc.withdraw(withdraw);
+		acc.withdraw(amount);
 		
 		System.out.println("Updated account data:");
 		System.out.println(acc);

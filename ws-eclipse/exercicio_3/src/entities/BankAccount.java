@@ -6,10 +6,10 @@ public class BankAccount {
 	private String holder;
 	private double balance;
 	
-	public BankAccount(int accountNumber, String holder, double balance) {
+	public BankAccount(int accountNumber, String holder, double initialDeposit) {
 		this.accountNumber = accountNumber;
 		this.holder = holder;
-		this.balance = balance;
+		deposit(initialDeposit);
 	}
 	
 	public BankAccount(int accountNumber, String holder) {
@@ -33,12 +33,12 @@ public class BankAccount {
 		return balance;
 	}
 	
-	public void deposit(double deposit) {
-		balance += deposit;
+	public void deposit(double amount) {
+		balance += amount;
 	}
 	
-	public void withdraw(double withdraw) {
-		balance -= (withdraw + 5);
+	public void withdraw(double amount) {
+		balance -= (amount + 5);
 	}
 	
 	public String toString() {
